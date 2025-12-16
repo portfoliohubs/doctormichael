@@ -1,0 +1,72 @@
+baseURL = "https://portfoliohubs.github.io/doctormichael/"
+defaultContentLanguage = "en"
+title = "My Portfolio"
+theme = []
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    contentDir = "content/en"
+    [languages.en.params]
+      direction = "ltr"
+      # --- Hero Section ---
+      [languages.en.params.hero]
+        name = "Dr. Name Here"
+        tagline = "Professional Dentist & Surgeon"
+        profile_image = "https://placehold.co/400x400/2563eb/ffffff?text=Doctor"
+        
+      # --- Skills Section ---
+      [languages.en.params.skills]
+        title = "My Skills"
+        list = ["Dental Surgery", "Orthodontics", "Cosmetic Dentistry", "Patient Care"]
+
+      # --- Education Section ---
+      [languages.en.params.education]
+        title = "Education"
+        [[languages.en.params.education.items]]
+          degree = "Bachelor of Dental Surgery"
+          university = "Cairo University"
+          year = "2015 - 2020"
+        [[languages.en.params.education.items]]
+          degree = "Master in Orthodontics"
+          university = "Alexandria University"
+          year = "2021 - 2023"
+
+      # --- Contact Section ---
+      [languages.en.params.contact]
+        title = "Get In Touch"
+        email = "doctor@example.com"
+        phone = "+201000000000"
+
+  [languages.ar]
+    languageName = "العربية"
+    weight = 2
+    contentDir = "content/ar"
+    [languages.ar.params]
+      direction = "rtl"
+      [languages.ar.params.hero]
+        name = "د. الاسم هنا"
+        tagline = "طبيب وجراح أسنان محترف"
+        profile_image = "https://placehold.co/400x400/2563eb/ffffff?text=Doctor"
+      
+      [languages.ar.params.skills]
+        title = "مهاراتي"
+        list = ["جراحة الأسنان", "تقويم الأسنان", "تجميل الأسنان", "رعاية المرضى"]
+
+      [languages.ar.params.education]
+        title = "التعليم"
+        [[languages.ar.params.education.items]]
+          degree = "بكالوريوس طب وجراحة الفم والأسنان"
+          university = "جامعة القاهرة"
+          year = "٢٠١٥ - ٢٠٢٠"
+
+      [languages.ar.params.contact]
+        title = "تواصل معي"
+        email = "doctor@example.com"
+        phone = "+201000000000"
+
+[params]
+  # إعدادات عامة
+  google_analytics_id = "" 
+  style_primary = "#2563eb" # اللون الأزرق الأساسي
